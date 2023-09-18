@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { AbouttabPageRoutingModule } from './abouttab-routing.module';
 
-import { AbouttabPage } from './abouttab.page';
+import { AboutTabPage } from './abouttab.page';
 
 @NgModule({
   imports: [
@@ -15,6 +15,7 @@ import { AbouttabPage } from './abouttab.page';
     IonicModule,
     AbouttabPageRoutingModule
   ],
-  declarations: [AbouttabPage]
+  declarations: [AboutTabPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AbouttabPageModule {}
