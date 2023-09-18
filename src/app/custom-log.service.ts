@@ -26,6 +26,6 @@ export class CustomLogService {
   }
 
   getLogs() {
-    return this.logs;
+    return this.logs.reverse();
   }
 }

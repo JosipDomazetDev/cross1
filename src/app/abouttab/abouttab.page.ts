@@ -39,8 +39,6 @@ export class AboutTabPage {
       componentProps: {
         logs: logs, // Pass the logs data to the modal
       },
-      breakpoints: [0, 0.3, 0.5, 0.8],
-      initialBreakpoint: 0.5
     });
     await modal.present();
   }

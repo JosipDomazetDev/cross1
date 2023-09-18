@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {ModalController} from "@ionic/angular";
 
 @Component({
@@ -7,10 +7,11 @@ import {ModalController} from "@ionic/angular";
   styleUrls: ['./log-modal.page.scss'],
 })
 export class LogModalPage {
-  @Input() logs!: string[]; // Use the ! operator to indicate it will be initialized externally
+  @Input() logs!: string[];
 
-  constructor(    private modalController: ModalController
-  ) {}
+  constructor(private modalController: ModalController
+  ) {
+  }
 
   dismiss() {
     this.modalController.dismiss();
