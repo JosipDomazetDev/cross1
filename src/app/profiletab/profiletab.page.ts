@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogService } from '../log.service'; // Import LogService
 
 @Component({
   selector: 'app-profiletab',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfiletabPage implements OnInit {
 
-  constructor() { }
+  constructor(private logService: LogService) { }
 
   ngOnInit() {
+    // Log that the page was opened when it initializes
+    this.logService.log('ProfiletabPage was opened');
   }
-
 }

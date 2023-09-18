@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {LogModalPage} from "./log-modal/log-modal.page";
 
 const routes: Routes = [
   {
@@ -21,7 +22,15 @@ const routes: Routes = [
   {
     path: 'abouttab',
     loadChildren: () => import('./abouttab/abouttab.module').then( m => m.AbouttabPageModule)
-  }
+  },
+  {
+    path: 'logs',
+    component: LogModalPage
+  },
+  {
+    path: 'log-modal',
+    loadChildren: () => import('./log-modal/log-modal.module').then( m => m.LogModalPageModule)
+  },
 ];
 @NgModule({
   imports: [
@@ -30,3 +39,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+
