@@ -14,14 +14,16 @@ export class AboutTabPage {
     email: 'josip.domazet.corp@gmail.com',
   };
 
+
   constructor(
+    // private logService: LogService,
     private modalController: ModalController
-  ) {}
-
-  showLogs() {
-
+  ) {
   }
 
+  showLogs() {
+    // const logs = this.logService.getLogs();
+    // this.presentModal(logs.join('\n'));
 
+  }
 }
-

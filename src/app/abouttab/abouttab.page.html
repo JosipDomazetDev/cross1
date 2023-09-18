@@ -1,15 +1,16 @@
+<!-- abouttab.page.html -->
 <ion-header>
   <ion-toolbar>
     <ion-title>About</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-text-center">
   <ion-card>
-    <ion-card-header>
-      App Information
-    </ion-card-header>
-    <ion-card-content>
+    <ion-card-content class="ion-text-center">
+      <div class="profile-picture-container">
+        <img src="assets/profile.jpg" alt="Profile Picture" class="rounded-image">
+      </div>
       <p>Version: {{ version }}</p>
       <p>Developer: {{ developerInfo.name }}</p>
       <p>Email: {{ developerInfo.email }}</p>
