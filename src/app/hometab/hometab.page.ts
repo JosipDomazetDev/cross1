@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LogService } from '../log.service'; // Import LogService
+import { CustomLogService } from '../custom-log.service'; // Import LogService
 
 @Component({
   selector: 'app-hometab',
@@ -8,7 +8,7 @@ import { LogService } from '../log.service'; // Import LogService
 })
 export class HometabPage implements OnInit {
 
-  constructor(private logService: LogService) { }
+  constructor(private logService: CustomLogService) { }
 
   ngOnInit() {
     this.logService.log('HometabPage was opened');

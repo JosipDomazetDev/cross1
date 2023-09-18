@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {environment} from 'src/environments/environment';
 import {ModalController} from '@ionic/angular';
-import {LogService} from "../log.service";
+import {CustomLogService} from "../custom-log.service";
 import {LogModalPage} from "../log-modal/log-modal.page";
 
 @Component({
@@ -18,7 +18,7 @@ export class AboutTabPage {
 
 
   constructor(
-    private logService: LogService,
+    private logService: CustomLogService,
     private modalController: ModalController
   ) {
   }
